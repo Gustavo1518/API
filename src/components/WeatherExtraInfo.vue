@@ -11,15 +11,4 @@ export default {
     msg: String
   }
 };
-</script>
-<p> {
-  color:red; 
-   font-size:20px;
-   font-family:Courier;
-   border:2px;
-   border-color:blue;
-   border-style:solid;
-   
-   width:100px; 
-   height:100px;
-  }
+  </script>
