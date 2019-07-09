@@ -1,9 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import WeatherTemperature from "./components/WeatherTemperature";
 
 Vue.use(Router);
-
 export default new Router({
   mode: "history",
   base: process.env.BASE_URL,
@@ -21,6 +21,11 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/About.vue")
+    },
+    {
+      path: "/WeatherTemperature",
+      name: "WeatherTemperature",
+      component: WeatherTemperature
     }
   ]
 });
