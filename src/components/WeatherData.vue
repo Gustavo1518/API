@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <div class="">
+  <div class="row">
+    <div class="column">
       <WeatherTemperature />
     </div>
-    <div>
+    <div class="column">
       <WeatherExtraInfo />
     </div>
   </div>
@@ -22,3 +22,13 @@ export default {
   }
 };
 </script>
+<style>
+.column {
+  display: table-cell;
+  width: 45%;
+  border: solid 1px red;
+}
+.row {
+  border: solid 1px blue;
+}
+</style>
