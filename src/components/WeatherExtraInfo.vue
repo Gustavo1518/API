@@ -6,9 +6,9 @@
 </template>
 <script>
 export default {
-  name: "HelloWorld",
+  name: "WeatherExtraInfo",
   props: {
     msg: String
   }
 };
-  </script>
+</script>

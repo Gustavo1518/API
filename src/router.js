@@ -3,8 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import WeatherTemperature from "./components/WeatherTemperature";
 import WeatherExtraInfo from "./components/WeatherExtraInfo";
-
-
+import WeatherData from "./components/WeatherData";
 Vue.use(Router);
 export default new Router({
   mode: "history",
@@ -33,6 +32,11 @@ export default new Router({
       path: "/WeatherExtraInfo",
       name: "WeatherExtraInfo",
       component: WeatherExtraInfo
+    },
+    {
+      path: "/WeatherData",
+      name: "WeatherData",
+      component: WeatherData
     }
   ]
 });
