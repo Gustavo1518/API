@@ -4,6 +4,8 @@ import Home from "./views/Home.vue";
 import WeatherTemperature from "./components/WeatherTemperature";
 import WeatherExtraInfo from "./components/WeatherExtraInfo";
 import WeatherData from "./components/WeatherData";
+import Location from "./components/Location";
+import WeatherLocation from "./components/WeatherLocation";
 Vue.use(Router);
 export default new Router({
   mode: "history",
@@ -37,6 +39,16 @@ export default new Router({
       path: "/WeatherData",
       name: "WeatherData",
       component: WeatherData
+    },
+    {
+      path: "/Location",
+      name: "Location",
+      component: Location
+    },
+    {
+      path: "/WeatherLocation",
+      name: "WeatherLocation",
+      component: WeatherLocation
     }
   ]
 });

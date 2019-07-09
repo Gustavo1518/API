@@ -11,6 +11,7 @@
 <script>
 import WeatherTemperature from "@/components/WeatherTemperature";
 import WeatherExtraInfo from "@/components/WeatherExtraInfo";
+
 export default {
   name: "WeatherData",
   components: {

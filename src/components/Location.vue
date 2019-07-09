@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <div>Ciudad De Mexico</div>
+  <div class="Location">
+    <h1>{{ ciudad }}</h1>
   </div>
 </template>
 <script>
 export default {
   name: "Location",
   props: {
-    msg: String
+    ciudad: String
   }
 };
-  </script>
+</script>
