@@ -2,6 +2,8 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import WeatherTemperature from "./components/WeatherTemperature";
+import WeatherExtraInfo from "./components/WeatherExtraInfo";
+
 
 Vue.use(Router);
 export default new Router({
@@ -26,6 +28,11 @@ export default new Router({
       path: "/WeatherTemperature",
       name: "WeatherTemperature",
       component: WeatherTemperature
+    },
+    {
+      path: "/WeatherExtraInfo",
+      name: "WeatherExtraInfo",
+      component: WeatherExtraInfo
     }
   ]
 });
