@@ -2,9 +2,9 @@
   <div>
     <HelloWorld msg="API con vue.js" />
     <WeatherLocation
-      :ciudad="ciudad"
-      :temperatura="temperatura + '°C'"
-      :humedad="humedad + '%'"
+      :ciudad="this.ciudad"
+      :temperatura="temperatura + ''"
+      :humedad="this.humedad + '%'"
     />
   </div>
 </template>
@@ -28,22 +28,17 @@ export default {
     WeatherLocation
   },
   beforeMount() {
-    this.ciudades();
+    this.ciudades().then(response => {
+      this.ciudad = response.data.ciudad;
+      this.temperatura = response.data.temperatura;
+    });
   },
   mounted() {
     console.log(this);
   },
   methods: {
     ciudades() {
-      axios
-        .get("http://localhost:3000/posts/1")
-        .then(function(response) {
-          console.log(response);
-          this.ciudad = response.ciudad;
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
+      return axios.get("http://localhost:3000/posts/1");
     }
   }
 };
