@@ -1,0 +1,9 @@
+{
+    "posts": [
+      { "id": 1, "ciudad": "Alemania", "temperatura": "99°C" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some commenaa", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }

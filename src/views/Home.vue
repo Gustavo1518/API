@@ -1,7 +1,11 @@
 <template>
   <div>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-    <WeatherLocation ciudad="Mexico" temperatura="15°C" humedad="18%" />
+    <HelloWorld msg="API con vue.js" />
+    <WeatherLocation
+      :ciudad="ciudad"
+      :temperatura="temperatura + '°C'"
+      :humedad="humedad + '%'"
+    />
   </div>
 </template>
 
@@ -12,31 +16,30 @@ import WeatherLocation from "@/components/WeatherLocation";
 import axios from "axios";
 export default {
   name: "home",
+  data() {
+    return {
+      ciudad: "Mexico",
+      temperatura: "17",
+      humedad: "12"
+    };
+  },
   components: {
     HelloWorld,
     WeatherLocation
   },
-  created() {
+  beforeMount() {
     this.ciudades();
+  },
+  mounted() {
+    console.log(this);
   },
   methods: {
     ciudades() {
-      var key = "521a97605aaf878aceadfa493caa3bfb";
       axios
-        .get(
-          "http://api.openweathermap.org/data/2.5/forecast?q=M%C3%BCnchen,DE&appid=" +
-            key,
-          {
-            method: "GET",
-            mode: "no-corse",
-            headers: {
-              "Access-Control-Allow-Origin": "*",
-              "Content-Type": "aplication/json"
-            }
-          }
-        )
+        .get("http://localhost:3000/posts/1")
         .then(function(response) {
           console.log(response);
+          this.ciudad = response.ciudad;
         })
         .catch(function(error) {
           console.log(error);
