@@ -4,7 +4,7 @@
       <Location :ciudad="ciudad" />
     </div>
     <div>
-      <WeatherData />
+      <WeatherData :humedad="humedad" :temperatura="temperatura" />
     </div>
   </div>
 </template>
@@ -19,7 +19,9 @@ export default {
     WeatherData
   },
   props: {
-    ciudad: String
+    ciudad: String,
+    temperatura: String,
+    humedad: String
   }
 };
 </script>

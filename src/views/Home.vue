@@ -1,7 +1,7 @@
 <template>
   <div>
     <HelloWorld msg="Welcome to Your Vue.js App" />
-    <WeatherLocation ciudad="Mexico" />
+    <WeatherLocation ciudad="Mexico" temperatura="15°C" humedad="18%" />
   </div>
 </template>
 

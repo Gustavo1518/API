@@ -1,14 +1,14 @@
 <template>
   <div>
     <div><v-icon name="umbrella"></v-icon></div>
-    <div>12° C</div>
+    {{ temperatura }}
   </div>
 </template>
 <script>
 export default {
   name: "WeatherTemperature",
   props: {
-    msg: String
+    temperatura: String
   }
 };
 </script>

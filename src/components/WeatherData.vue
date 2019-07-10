@@ -1,10 +1,10 @@
 <template>
   <div class="row">
     <div class="column">
-      <WeatherTemperature />
+      <WeatherTemperature :temperatura="temperatura" />
     </div>
     <div class="column">
-      <WeatherExtraInfo />
+      <WeatherExtraInfo :humedad="humedad" />
     </div>
   </div>
 </template>
@@ -19,7 +19,8 @@ export default {
     WeatherExtraInfo
   },
   props: {
-    msg: String
+    temperatura: String,
+    humedad: String
   }
 };
 </script>
