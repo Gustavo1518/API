@@ -38,6 +38,8 @@ export default {
   width: 280px;
 }
 .dataContainer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
