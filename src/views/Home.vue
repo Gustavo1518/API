@@ -5,31 +5,15 @@
       :temperatura="temperatura + ''"
       :humedad="this.humedad + '%'"
     />
-    <br />
-    <WeatherLocation
-      :ciudad="this.ciudad"
-      :temperatura="temperatura + ''"
-      :humedad="this.humedad + '%'"
-    />
-    <br />
-    <WeatherLocation
-      :ciudad="this.ciudad"
-      :temperatura="temperatura + ''"
-      :humedad="this.humedad + '%'"
-    />
-    <br />
-    <WeatherLocation
-      :ciudad="this.ciudad"
-      :temperatura="temperatura + ''"
-      :humedad="this.humedad + '%'"
-    />
-    <br />
-    <WeatherLocation
-      :ciudad="this.ciudad"
-      :temperatura="temperatura + ''"
-      :humedad="this.humedad + '%'"
-    />
-    <br />
+    <br />    
+    <div v-for="todo in this.todos" :key="todo.id">
+      {{ todo.id }}
+      <WeatherLocation
+        :ciudad="todo.ciudad"
+        :temperatura="todo.temperatura + ''"
+        :humedad="todo.humedad + '%'"
+      />
+    </div>
   </div>
 </template>
 
@@ -43,7 +27,8 @@ export default {
     return {
       ciudad: "Mexico",
       temperatura: "17",
-      humedad: "12"
+      humedad: "12",
+      todos: null
     };
   },
   components: {
@@ -54,6 +39,11 @@ export default {
       this.ciudad = response.data.ciudad;
       this.temperatura = response.data.temperatura;
     });
+    this.getTodos().then(response => {
+      console.log("RESPONSE");
+      console.log(response);
+      this.todos = response.data;
+    });
   },
   mounted() {
     console.log(this);
@@ -62,11 +52,8 @@ export default {
     ciudades() {
       return axios.get("http://localhost:3000/posts/1");
     },
-    ciudades1() {
-      return axios.get("http://localhost:3000/posts/2");
-    },
-    ciudades2() {
-      return axios.get("http://localhost:3000/posts/3");
+    getTodos() {
+      return axios.get("http://localhost:3000/posts");
     }
   }
 };
