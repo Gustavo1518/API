@@ -1,42 +1,40 @@
 <template>
   <div>
-    <HelloWorld msg="API con vue.js" />
     <WeatherLocation
       :ciudad="this.ciudad"
       :temperatura="temperatura + ''"
       :humedad="this.humedad + '%'"
-      
     />
+    <br />
     <WeatherLocation
       :ciudad="this.ciudad"
       :temperatura="temperatura + ''"
       :humedad="this.humedad + '%'"
-      
     />
+    <br />
     <WeatherLocation
       :ciudad="this.ciudad"
       :temperatura="temperatura + ''"
       :humedad="this.humedad + '%'"
-      
     />
+    <br />
     <WeatherLocation
       :ciudad="this.ciudad"
       :temperatura="temperatura + ''"
       :humedad="this.humedad + '%'"
-      
     />
+    <br />
     <WeatherLocation
       :ciudad="this.ciudad"
       :temperatura="temperatura + ''"
       :humedad="this.humedad + '%'"
-      
     />
+    <br />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 import WeatherLocation from "@/components/WeatherLocation";
 import axios from "axios";
 export default {
@@ -49,7 +47,6 @@ export default {
     };
   },
   components: {
-    HelloWorld,
     WeatherLocation
   },
   beforeMount() {

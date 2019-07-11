@@ -3,7 +3,6 @@
     <div class="row">
       <div class="column">
         <WeatherTemperature :temperatura="temperatura" />
-        
       </div>
       <div class="column">
         <WeatherExtraInfo :humedad="humedad" />

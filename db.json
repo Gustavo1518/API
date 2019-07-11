@@ -7,22 +7,22 @@
     },
     {
       "id": 2,
-      "ciudad": "México",
+      "ciudad1": "México",
       "temperatura": "23°C"
     },
     {
       "id": 3,
-      "ciudad": "Brasil",
+      "ciudad2": "Brasil",
       "temperatura": "45°C"
     },
     {
       "id": 4,
-      "ciudad": "USA",
+      "ciudad3": "USA",
       "temperatura": "12°C"
     },
     {
       "id": 5,
-      "ciudad": "Peru",
+      "ciudad4": "Peru",
       "temperatura": "-5°C"
     }
   ],
