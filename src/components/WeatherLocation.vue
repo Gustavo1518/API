@@ -32,6 +32,6 @@ export default {
   border-radius: 59px 59px 59px 59px;
   -moz-border-radius: 59px 59px 59px 59px;
   -webkit-border-radius: 59px 59px 59px 59px;
-  background: chocolate;
+  background: rgb(128, 236, 250);
 }
 </style>

@@ -3,6 +3,7 @@
     <div class="row">
       <div class="column">
         <WeatherTemperature :temperatura="temperatura" />
+        
       </div>
       <div class="column">
         <WeatherExtraInfo :humedad="humedad" />
@@ -30,11 +31,11 @@ export default {
 .column {
   display: table-cell;
   width: 45%;
-  border: solid 1px rgb(141, 42, 42);
-  background: rgb(223, 215, 214);
+  border: solid 1px rgb(42, 85, 141);
+  background: rgb(172, 223, 238);
 }
 .row {
-  border: solid 1px black;
+  border: solid 1px rgba(255, 255, 255, 0.918);
   width: 280px;
 }
 .dataContainer {

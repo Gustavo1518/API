@@ -2,6 +2,7 @@
   <div>
     <div><v-icon name="sun"></v-icon></div>
     {{ temperatura }}
+    
   </div>
 </template>
 <script>

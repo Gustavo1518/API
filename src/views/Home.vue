@@ -5,6 +5,31 @@
       :ciudad="this.ciudad"
       :temperatura="temperatura + ''"
       :humedad="this.humedad + '%'"
+      
+    />
+    <WeatherLocation
+      :ciudad="this.ciudad"
+      :temperatura="temperatura + ''"
+      :humedad="this.humedad + '%'"
+      
+    />
+    <WeatherLocation
+      :ciudad="this.ciudad"
+      :temperatura="temperatura + ''"
+      :humedad="this.humedad + '%'"
+      
+    />
+    <WeatherLocation
+      :ciudad="this.ciudad"
+      :temperatura="temperatura + ''"
+      :humedad="this.humedad + '%'"
+      
+    />
+    <WeatherLocation
+      :ciudad="this.ciudad"
+      :temperatura="temperatura + ''"
+      :humedad="this.humedad + '%'"
+      
     />
   </div>
 </template>
@@ -39,6 +64,12 @@ export default {
   methods: {
     ciudades() {
       return axios.get("http://localhost:3000/posts/1");
+    },
+    ciudades1() {
+      return axios.get("http://localhost:3000/posts/2");
+    },
+    ciudades2() {
+      return axios.get("http://localhost:3000/posts/3");
     }
   }
 };

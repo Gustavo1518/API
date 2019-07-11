@@ -1,9 +1,39 @@
 {
-    "posts": [
-      { "id": 1, "ciudad": "Alemania", "temperatura": "99°C" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some commenaa", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "posts": [
+    {
+      "id": 1,
+      "ciudad": "Alemania",
+      "temperatura": "99°C"
+    },
+    {
+      "id": 2,
+      "ciudad": "México",
+      "temperatura": "23°C"
+    },
+    {
+      "id": 3,
+      "ciudad": "Brasil",
+      "temperatura": "45°C"
+    },
+    {
+      "id": 4,
+      "ciudad": "USA",
+      "temperatura": "12°C"
+    },
+    {
+      "id": 5,
+      "ciudad": "Peru",
+      "temperatura": "-5°C"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some commenaa",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}
