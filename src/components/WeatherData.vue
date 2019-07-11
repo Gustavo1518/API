@@ -1,10 +1,12 @@
 <template>
-  <div class="row">
-    <div class="column">
-      <WeatherTemperature :temperatura="temperatura" />
-    </div>
-    <div class="column">
-      <WeatherExtraInfo :humedad="humedad" />
+  <div class="dataContainer">
+    <div class="row">
+      <div class="column">
+        <WeatherTemperature :temperatura="temperatura" />
+      </div>
+      <div class="column">
+        <WeatherExtraInfo :humedad="humedad" />
+      </div>
     </div>
   </div>
 </template>
@@ -28,9 +30,14 @@ export default {
 .column {
   display: table-cell;
   width: 45%;
-  border: solid 1px red;
+  border: solid 1px rgb(141, 42, 42);
+  background: rgb(223, 215, 214);
 }
 .row {
-  border: solid 1px blue;
+  border: solid 1px black;
+  width: 280px;
+}
+.dataContainer {
+  text-align: center;
 }
 </style>

@@ -27,7 +27,11 @@ export default {
 </script>
 <style>
 .container {
-  border: solid 1px orange;
-  width: 300px;
+  width: 500px;
+  color: rgb(13, 65, 44);
+  border-radius: 59px 59px 59px 59px;
+  -moz-border-radius: 59px 59px 59px 59px;
+  -webkit-border-radius: 59px 59px 59px 59px;
+  background: chocolate;
 }
 </style>

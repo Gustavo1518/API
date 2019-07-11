@@ -1,5 +1,5 @@
 <template>
-  <div class="Location">
+  <div class="location">
     <h1>{{ ciudad }}</h1>
   </div>
 </template>
@@ -11,3 +11,8 @@ export default {
   }
 };
 </script>
+<style>
+.location {
+  text-align: center;
+}
+</style>

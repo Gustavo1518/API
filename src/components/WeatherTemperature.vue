@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div><v-icon name="umbrella"></v-icon></div>
+    <div><v-icon name="sun"></v-icon></div>
     {{ temperatura }}
   </div>
 </template>
